@@ -4,13 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint-staged": "lint-staged"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "lint-staged": {
-    "*.js": [
+    "**/*.js": [
       "git add",
-      "eslint --fix"
+      "eslint --ignore-path .gitignore --fix"
     ]
   },
   "husky": {
@@ -19,7 +18,7 @@
     }
   },
   "keywords": [],
-  "author": "",
+  "author": "Pawel Giers",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.48.0",
