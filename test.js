@@ -1,3 +1,3 @@
-function test (param2) {
+function test (paramX, paramY) {
   return { a: 1 };
 }
