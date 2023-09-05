@@ -1,0 +1,14 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true
+    },
+    "extends": "semistandard",
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+        // You can add additional rules here if needed
+    }
+}
