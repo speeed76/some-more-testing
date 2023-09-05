@@ -1,0 +1,16 @@
+{
+  "editor.fontFamily": "Consolas",
+  "editor.fontSize": 12,
+
+  "extensions": [
+    "ms-vscode.git",
+    "bierbaumer.vscode-github-integration",
+    "dbaeumer.vscode-eslint",
+    "github.copilot.vscode-extension",
+    "github.copilot.vscode-extension-chat",
+    "github.copilot.vscode-extension-lab"
+  ],
+
+  "eslint.enable": true,
+  "rest-client.enable": true
+}
