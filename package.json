@@ -8,8 +8,8 @@
   },
   "lint-staged": {
     "**/*.js": [
-      "git add",
-      "eslint --ignore-path .gitignore --fix"
+      "eslint --ignore-path .gitignore --fix",
+      "git add"
     ]
   },
   "husky": {
