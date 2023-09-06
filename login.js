@@ -42,7 +42,21 @@ class SignUpUseCase {
 // Infra Layer
 // add-account-repository.js
 const mongoose = require('mongoose');
-const AccountModel = mongoose.model('Account');
+
+const accountSchema = new mongoose.Schema({
+  email: {
+    type: String,
+    required: true,
+    unique: true
+  },
+  password: {
+    type: String,
+    required: true
+  }
+});
+
+const AccountModel = mongoose.model('Account', accountSchema);
+
 class AddAccountRepository {
   async add (email, password, repeatPassword) {
     const user = await AccountModel.create({ email, password });
